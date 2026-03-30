@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def test_login_success():
     driver = get_driver()
-
+    print("CI/CD test running")
     driver.get("https://the-internet.herokuapp.com/login")
 
     driver.find_element(By.ID, "username").send_keys("tomsmith")
